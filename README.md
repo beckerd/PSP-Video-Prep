@@ -18,7 +18,7 @@ The code for PSP Video Prep was written by Claude Fable 5.2, Anthropic's AI mode
 
 ## Download
 
-Grab `PSP Video Prep.app` from the [Releases](../../releases) page. The app is signed and notarized, so it runs out of the box on both Apple Silicon and Intel Macs. Requires macOS 14 or later.
+Grab `PSP Video Prep.app` from the [Releases](../../releases) page. The app is signed and notarized, so it runs out of the box on both Apple Silicon and Intel Macs. Requires macOS 26.5 or later.
 
 ## Usage
 
