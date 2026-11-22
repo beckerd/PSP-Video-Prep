@@ -13,6 +13,7 @@ The code for PSP Video Prep was written by Claude Fable 5.2, Anthropic's AI mode
 - **Made for the PSP's player** — 480×272 H.264 (Main profile, level 3.0) with AAC stereo audio, at a constant frame rate, in the Sony `MSNV` flavour of MP4 the PSP expects. Confirmed playing on a real PSP running firmware 6.61.
 - **Batch conversion** — queue any number of videos, or drop a whole folder (subfolders included), and convert them in one go.
 - **Almost any input** — formats macOS can read are handled directly; everything else goes through a bundled copy of FFmpeg.
+- **Memory-stick friendly** — save straight to the PSP's `VIDEO` folder. The app removes the hidden `._` files macOS leaves on memory sticks, which the PSP would otherwise list as corrupted videos.
 - **Thumbnails** — each video gets a 160×120 thumbnail for the PSP's video list. Pick from six frames, export one on its own, or choose no thumbnail.
 - **Quality and scaling choices** — three quality levels (Standard is roughly 5.5 MB per minute), and fit, fill or stretch for video that isn't the PSP's shape.
 

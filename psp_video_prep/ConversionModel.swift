@@ -42,8 +42,8 @@ final class ConversionModel {
     private(set) var notice: String?
     var quality: Quality = .standard
     var scaling: Scaling = .fit
-    /// Where converted videos are saved. The app is sandboxed, so it can only
-    /// write to a folder the user has picked; nil until they pick one.
+    /// Where converted videos are saved; nil until the user picks a folder,
+    /// which they're asked to do the first time they convert.
     private(set) var outputFolder: URL?
 
     private var task: Task<Void, Never>?
@@ -76,9 +76,6 @@ final class ConversionModel {
     /// Videos macOS can decode are read directly; anything else (MKV, WebM, DivX…)
     /// goes through the bundled FFmpeg. Folders are searched for videos, including subfolders.
     func add(_ urls: [URL]) {
-        // Files arriving from an open panel are only readable inside the sandbox once
-        // access is started. It's kept for the life of the app, since queued videos are read later.
-        for url in urls { _ = url.startAccessingSecurityScopedResource() }
         Task {
             var skipped = 0
             for url in Self.expandingFolders(urls) {

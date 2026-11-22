@@ -103,11 +103,12 @@ struct PSPContainer {
             try? FileManager.default.removeItem(at: temporary)
             throw error
         }
-        // A plain remove-and-rename within the same folder; unlike replaceItemAt it
-        // needs no access beyond the output folder, which matters in the sandbox.
+        // Swap the repackaged file in with a plain remove-and-rename in the same folder.
         do {
             try FileManager.default.removeItem(at: url)
             try FileManager.default.moveItem(at: temporary, to: url)
+            AppleDouble.removeCompanion(of: temporary)
+            AppleDouble.removeCompanion(of: url)
         } catch {
             try? FileManager.default.removeItem(at: temporary)
             throw error

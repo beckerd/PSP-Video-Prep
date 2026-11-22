@@ -77,6 +77,7 @@ enum PSPThumbnail {
             kCGImageDestinationLossyCompressionQuality: 0.85,
         ] as CFDictionary)
         guard CGImageDestinationFinalize(writer) else { throw ConversionError.cannotWrite }
+        AppleDouble.removeCompanion(of: destination)
     }
 
     /// Scales `frame` to fill 160x120, trimming the sides of widescreen video.
