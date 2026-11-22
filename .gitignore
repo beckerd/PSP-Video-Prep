@@ -16,3 +16,6 @@ psp_video_prep/Helpers/ffmpeg
 
 # Local test media
 test video/
+
+# Local-only icon generator
+scripts/make-icon.swift
