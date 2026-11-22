@@ -1,0 +1,22 @@
+PSP Video Prep includes FFmpeg
+==============================
+
+To read video formats that macOS cannot open by itself (MKV, WebM, AVI/DivX,
+WMV, FLV and others), this app runs the "ffmpeg" program found next to this
+file. It is a separate executable: no FFmpeg code is linked into the app.
+
+FFmpeg is free software licensed under the GNU Lesser General Public License
+(LGPL) version 2.1 or later. The full licence text is in
+FFMPEG-COPYING.LGPLv2.1.txt, alongside this file.
+
+  Project:  https://ffmpeg.org
+  Version:  9.0.2, unmodified
+  Source:   https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+
+The bundled copy is built from that unmodified source by the script
+scripts/build-ffmpeg.sh in this app's source repository, which records the
+exact configuration. The build enables no GPL or non-free components and uses
+no external libraries beyond those that ship with macOS. You may replace the
+bundled "ffmpeg" with your own build.
+
+FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.

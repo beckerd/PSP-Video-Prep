@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# Build artifacts
+DerivedData/
+build/
+*.app
+
+# FFmpeg is built locally by scripts/build-ffmpeg.sh rather than committed
+.ffmpeg-build/
+psp_video_prep/Helpers/ffmpeg
+
+# Local test media
+test video/
