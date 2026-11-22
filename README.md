@@ -16,6 +16,10 @@ The code for PSP Video Prep was written by Claude Fable 5.2, Anthropic's AI mode
 - **Thumbnails** — each video gets a 160×120 thumbnail for the PSP's video list. Pick from six frames, export one on its own, or choose no thumbnail.
 - **Quality and scaling choices** — three quality levels (Standard is roughly 5.5 MB per minute), and fit, fill or stretch for video that isn't the PSP's shape.
 
+## Download
+
+Grab `PSP Video Prep.app` from the [Releases](../../releases) page. The app is signed and notarized, so it runs out of the box on both Apple Silicon and Intel Macs. Requires macOS 14 or later.
+
 ## Usage
 
 1. Launch the app and drop videos or folders anywhere on the window.
