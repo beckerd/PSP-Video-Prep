@@ -1,5 +1,7 @@
 # PSP Video Prep
 
+<img width="200" alt="PSP Video Prep" src="psp_video_prep/Assets.xcassets/AppIcon.appiconset/icon_512.png" />
+
 A native macOS app that converts videos into files a Sony PSP will actually play, with thumbnails for the PSP's video menu.
 
 Drop in almost any video — MP4, MOV, MKV, AVI (DivX/Xvid), WMV, FLV, MPEG and more — and get back a PSP-ready `.mp4` plus a matching `.THM` thumbnail. Everything needed is inside the app; there is nothing else to install.
